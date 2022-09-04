@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        function addnum(){
+            var textInput = document.getElementById("num1");
+            var num1 = textInput.value;
+            var op = document.getElementById("operation").value;
+            var textInput = document.getElementById("num2");
+            var num2 = textInput.value;
+            var textInput = document.getElementById("result");
+            if(op==='+'){
+                textInput.value = parseInt(num1)+parseInt(num2);
+            }
+            if(op === '-')
+                {
+                    textInput.value = parseInt(num1)-parseInt(num2);
+                }
+                
+            if(op === '*')
+                {
+                    textInput.value = parseInt(num1)*parseInt(num2);
+                }
+                
+            if(op === '/')
+                {
+                    textInput.value = parseInt(num1)/parseInt(num2);
+                }
+            }
+            
+            
+    
+    </script>
+</head>
+
+<body>
+    <input type="number" id="num1">
+    <select id="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2"> =
+    <input type="number" id="result">
+    <input type="button" value="Compute" onclick="addnum()">
+</body>
+
+</html
